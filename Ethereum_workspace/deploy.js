@@ -10,7 +10,7 @@ const BYTECODE = fs.readFileSync("./bin/contracts/VotingTest.bin").toString();
 // console.log(BYTECODE);
 
 const accounts = [];
-const web3 = new Web3(Web3.givenProvider || "http://localhost:7545");
+const web3 = new Web3(Web3.givenProvider || "http://localhost:8545");
 async function init() {
   await web3.eth.getAccounts().then((data) => {
     //console.log(data);
